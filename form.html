@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Ulasan - DOM & Event Handling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">TokoOnline</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Katalog Produk (Fetch API)</a></li>
+                <li><a href="form.html" class="active">Form Ulasan (DOM & Event)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="form-card">
+            <h2>Kirim Ulasan Produk</h2>
+            <p>Silakan isi form di bawah ini untuk mengirimkan umpan balik Anda.</p>
+
+            <form id="feedback-form" novalidate>
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" placeholder="Masukkan nama Anda">
+                    <small class="error-msg" id="error-nama"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Alamat Email:</label>
+                    <input type="email" id="email" placeholder="contoh@email.com">
+                    <small class="error-msg" id="error-email"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="kategori">Kategori Ulasan:</label>
+                    <select id="kategori">
+                        <option value="">-- Pilih Kategori --</option>
+                        <option value="Kualitas Produk">Kualitas Produk</option>
+                        <option value="Pelayanan">Pelayanan</option>
+                        <option value="Pengiriman">Pengiriman</option>
+                    </select>
+                    <small class="error-msg" id="error-kategori"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="pesan">Pesan Ulasan:</label>
+                    <textarea id="pesan" rows="4" placeholder="Tuliskan ulasan Anda..."></textarea>
+                    <small class="char-count" id="char-count">0 / 200 karakter</small>
+                    <small class="error-msg" id="error-pesan"></small>
+                </div>
+
+                <button type="submit" id="btn-submit">Kirim Ulasan</button>
+            </form>
+
+            <!-- Container Hasil Feedback (Akan diisi via DOM) -->
+            <div id="feedback-result" class="feedback-result hidden"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Tugas Week 6 PPAW</p>
+    </footer>
+
+    <script src="form.js"></script>
+</body>
+</html>
