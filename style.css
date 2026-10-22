@@ -14,7 +14,7 @@ body {
 }
 
 .navbar {
-    background-color: #4f46e5;
+    background-color: #f291ea;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -37,7 +37,7 @@ body {
 }
 
 .nav-links a.active, .nav-links a:hover {
-    background-color: #3730a3;
+    background-color: #ca40ac;
 }
 
 .container {
@@ -149,7 +149,7 @@ body {
 
 button[type="submit"] {
     width: 100%;
-    background-color: #4f46e5;
+    background-color: #f92177;
     color: white;
     padding: 0.75rem;
     border: none;
@@ -160,11 +160,11 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #3730a3;
+    background-color: #cb7ed5;
 }
 
 .error-msg {
-    color: #dc2626;
+    color: #fe0692;
     font-size: 0.8rem;
     margin-top: 0.2rem;
     min-height: 1rem;
@@ -182,7 +182,7 @@ button[type="submit"]:hover {
     background-color: #ecfdf5;
     border: 1px solid #10b981;
     border-radius: 8px;
-    color: #065f46;
+    color: #e45716;
 }
 
 .feedback-result.hidden {
@@ -192,7 +192,7 @@ button[type="submit"]:hover {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #1f2937;
+    background-color: #e080cb;
     color: white;
     margin-top: auto;
 }
